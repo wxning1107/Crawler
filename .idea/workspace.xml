@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73ac2f13-44a1-4df6-a45f-94cf53ef0721" name="Default Changelist" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/fetcher/fetcher.go" afterDir="false" />
+    <list default="true" id="73ac2f13-44a1-4df6-a45f-94cf53ef0721" name="Default Changelist" comment="完成engine和parser">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine/engine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhenai/parser/citylist.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhenai/parser/citylist_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
@@ -16,12 +20,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go Application" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="42305e38-8b0a-4734-8826-2f596e702d40" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -31,7 +39,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -82,7 +90,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="封装城市解析器" />
+    <MESSAGE value="完成engine和parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成engine和parser" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

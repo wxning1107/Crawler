@@ -1,24 +1,13 @@
 package main
 
 import (
+	"crawler/fetcher"
 	"fmt"
-	"io/ioutil"
-	"net/http"
 	"regexp"
 )
 
 func main() {
-	resp, err := http.Get("https://www.zhenai.com/zhenghun")
-	if err != nil {
-		panic(err)
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		fmt.Printf("Error: wrong code", resp.StatusCode)
-		return
-	}
-	all, err := ioutil.ReadAll(resp.Body)
+	all, err := fetcher.Fetch("https://www.zhenai.com/zhenghun")
 	if err != nil {
 		panic(err)
 	}

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73ac2f13-44a1-4df6-a45f-94cf53ef0721" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zhenai/parser/citylist_test_data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhenai/parser/city.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhenai/parser/citylist.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/citylist.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zhenai/parser/citylist_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/citylist_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestParseCityList in crawler/zhenai/parser">
+  <component name="RunManager" selected="Go Build.go build crawler">
     <configuration name="go build crawler" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="crawler" />
       <working_directory value="$PROJECT_DIR$" />
@@ -77,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestParseCityList in crawler/zhenai/parser" />
         <item itemvalue="Go Build.go build crawler" />
+        <item itemvalue="Go Test.TestParseCityList in crawler/zhenai/parser" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +101,8 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="封装城市解析器" />
     <MESSAGE value="完成engine和parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成engine和parser" />
+    <MESSAGE value="测试parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试parser" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

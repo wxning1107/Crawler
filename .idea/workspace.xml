@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73ac2f13-44a1-4df6-a45f-94cf53ef0721" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model/profile.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zhenai/parser/profile.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fetcher/fetcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/fetcher/fetcher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhenai/parser/city.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/city.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhenai/parser/citylist.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/citylist.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +101,8 @@
     <MESSAGE value="完成engine和parser" />
     <MESSAGE value="测试parser" />
     <MESSAGE value="parser city" />
-    <option name="LAST_COMMIT_MESSAGE" value="parser city" />
+    <MESSAGE value="单任务爬虫" />
+    <option name="LAST_COMMIT_MESSAGE" value="单任务爬虫" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

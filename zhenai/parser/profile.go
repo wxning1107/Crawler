@@ -20,8 +20,6 @@ var hokouRe = regexp.MustCompile(`<div class="m-btn purple" data-v-8b1eac0c>工�
 var houseRe = regexp.MustCompile(`<div class="m-btn pink" data-v-8b1eac0c>(和家人同住|已购房|租房)</div>`)
 var carRe = regexp.MustCompile(`div class="m-btn pink" data-v-8b1eac0c>(未买车|已买车)</div>`)
 
-//var nameRe = regexp.MustCompile(`<p class="reportTarget" data-v-6d8dded2>将 <span class="purple" data-v-6d8dded2>([^<]+)</span> 举报</p>`)
-
 func ParseProfile(contents []byte, name string) engine.ParseResult {
 	profile := model.Profile{}
 	profile.Name = name

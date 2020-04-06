@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73ac2f13-44a1-4df6-a45f-94cf53ef0721" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/engine/concurrent.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scheduler/simple.go" afterDir="false" />
+    <list default="true" id="73ac2f13-44a1-4df6-a45f-94cf53ef0721" name="Default Changelist" comment="并发调度器">
+      <change afterPath="$PROJECT_DIR$/fetcher/getIp/getIP.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scheduler/queued.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/engine.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/concurrent.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/concurrent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/simple.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fetcher/fetcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/fetcher/fetcher.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhenai/parser/city.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/city.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhenai/parser/citylist.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/citylist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scheduler/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler/simple.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +48,11 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fetcher/getIp" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -69,6 +75,15 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build crawler/fetcher/getIp" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="crawler" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/fetcher/getIp/getIP.go" />
+      <package value="crawler/fetcher/getIp" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestParseCityList in crawler/zhenai/parser" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="crawler" />
       <working_directory value="$PROJECT_DIR$/zhenai/parser" />
@@ -83,6 +98,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build crawler" />
+        <item itemvalue="Go Build.go build crawler/fetcher/getIp" />
         <item itemvalue="Go Test.TestParseCityList in crawler/zhenai/parser" />
       </list>
     </recent_temporary>
@@ -108,7 +124,8 @@
     <MESSAGE value="测试parser" />
     <MESSAGE value="parser city" />
     <MESSAGE value="单任务爬虫" />
-    <option name="LAST_COMMIT_MESSAGE" value="单任务爬虫" />
+    <MESSAGE value="并发调度器" />
+    <option name="LAST_COMMIT_MESSAGE" value="并发调度器" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

@@ -8,8 +8,8 @@ It is a personal project :smile:, starting from 0 using the native code to build
 
 The main purpose is to deeply understand the concurrency mechanism of golang and the design idea of the distributed system.
 
-[crawler_part 1](https://wxning1107.github.io/2019/07/12/go-crawler1/)   
-[crawler_part 2](https://wxning1107.github.io/2019/08/03/go-crawler2/)
+[单任务版爬虫](https://wxning1107.github.io/2019/07/12/go-crawler1/)   
+[并发版爬虫](https://wxning1107.github.io/2019/08/03/go-crawler2/)
 
 # Features
 

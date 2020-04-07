@@ -1,6 +1,6 @@
 # Golang_crawler
 
-Go_crawler is a distributed web crawler written in golang without using any crawler framework.
+Crawler is a distributed web crawler written in golang without using any crawler framework.
 
 
 It is a personal project :smile:, starting from 0 using the native code to build a distributed crawler system.

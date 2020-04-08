@@ -3,7 +3,7 @@
 Crawler is a distributed web crawler written in golang without using any crawler framework.
 
 
-It is a personal project :smile:, starting from 0 using the native code to build a distributed crawler system.
+It is a personal project :smile:, starting from zero using the native code to build a distributed crawler system.
 
 
 The main purpose is to deeply understand the concurrency mechanism of golang and the design idea of the distributed system.

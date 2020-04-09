@@ -20,7 +20,9 @@ var hokouRe = regexp.MustCompile(`<div class="m-btn purple" data-v-8b1eac0c>工�
 var houseRe = regexp.MustCompile(`<div class="m-btn pink" data-v-8b1eac0c>(和家人同住|已购房|租房)</div>`)
 var carRe = regexp.MustCompile(`div class="m-btn pink" data-v-8b1eac0c>(未买车|已买车)</div>`)
 
-func ParseProfile(contents []byte, name string) engine.ParseResult {
+var idUrlRe = regexp.MustCompile(`http://album.zhenai.com/u/([\d]+)`)
+
+func ParseProfile(contents []byte, name string, url string) engine.ParseResult {
 	profile := model.Profile{}
 	profile.Name = name
 
@@ -47,7 +49,16 @@ func ParseProfile(contents []byte, name string) engine.ParseResult {
 	profile.Car = extractString(contents, carRe)
 	//profile.Name = extractString(contents, nameRe)
 
-	result := engine.ParseResult{Items: []interface{}{profile}}
+	result := engine.ParseResult{
+		Items: []engine.Item{
+			{
+				Url:     url,
+				Type:    "zhenai",
+				Id:      extractString([]byte(url), idUrlRe),
+				Payload: profile,
+			},
+		},
+	}
 
 	return result
 }

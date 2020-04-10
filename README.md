@@ -3,7 +3,7 @@
 Crawler is a distributed web crawler written in golang without using any crawler framework.
 
 
-It is a personal project :smile:, starting from zero using the native code to build a distributed crawler system.
+`It is a personal project` :smile:, starting from zero using the native code to build a distributed crawler system.
 
 
 The main purpose is to deeply understand the concurrency mechanism of golang and the design idea of the distributed system.
@@ -21,9 +21,9 @@ The main purpose is to deeply understand the concurrency mechanism of golang and
 
 - Utilize the natural advantages of Go in concurrency to achieve the distribution and scheduling of crawler tasks to achieve concurrent requirements.
 
-- Using rpc to separate and be independent of concurrent tasks in a  single task version to implement distributed crawlers.
+- Using `rpc` to separate and be independent of concurrent tasks in a  single task version to implement distributed crawlers.
 
-- Using Docker+ElasticSearch to build a data storage backend, using the Go template library for data display
+- Using `Docker`+`ElasticSearch` to build a data storage backend, using the Go template library for data display
 
 <!-- ALL-CONTRIBUTORS-LIST: START - Do not remove or modify this section -->
 

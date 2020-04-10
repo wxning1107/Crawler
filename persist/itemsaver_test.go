@@ -40,12 +40,12 @@ func TestSave(t *testing.T) {
 
 	const index = "dating_profile"
 	// Save expected item
-	err = save(client, expected, index)
+	err = Save(client, expected, index)
 	if err != nil {
 		panic(err)
 	}
 
-	// Fetch save item
+	// Fetch Save item
 	resp, err := client.Get().
 		Index(index).
 		Type(expected.Type).

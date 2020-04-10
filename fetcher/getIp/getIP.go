@@ -103,7 +103,7 @@ func GetRep(urls string, ip string) *http.Response {
 }
 
 func GetAgent() string {
-	agent := [...]string{
+	agent := []string{
 		"Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:50.0) Gecko/20100101 Firefox/50.0",
 		"Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; en) Presto/2.8.131 Version/11.11",
 		"Opera/9.80 (Windows NT 6.1; U; en) Presto/2.8.131 Version/11.11",

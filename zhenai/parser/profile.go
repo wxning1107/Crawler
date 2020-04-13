@@ -22,7 +22,7 @@ var carRe = regexp.MustCompile(`div class="m-btn pink" data-v-8b1eac0c>(未买�
 
 var idUrlRe = regexp.MustCompile(`http://album.zhenai.com/u/([\d]+)`)
 
-func ParseProfile(contents []byte, name string, url string) engine.ParseResult {
+func parseProfile(contents []byte, name string, url string) engine.ParseResult {
 	profile := model.Profile{}
 	profile.Name = name
 
@@ -70,4 +70,26 @@ func extractString(contents []byte, re *regexp.Regexp) string {
 	} else {
 		return ""
 	}
+}
+
+type ProfileParser struct {
+	userName string
+}
+
+func (p *ProfileParser) Parse(contents []byte, url string) engine.ParseResult {
+	return parseProfile(contents, p.userName, url)
+}
+
+func (p *ProfileParser) Serialize() (name string, args interface{}) {
+	return "ProfileParser", p.userName
+}
+
+//func ProfileParser(name string) engine.ParserFunc {
+//	return func(c []byte, url string) engine.ParseResult {
+//		return ParseProfile(c, name, url)
+//	}
+//}
+
+func NewProfileParser(name string) *ProfileParser {
+	return &ProfileParser{userName: name}
 }

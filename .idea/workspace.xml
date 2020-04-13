@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73ac2f13-44a1-4df6-a45f-94cf53ef0721" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crawler_distributed/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distributed/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distributed/persist/client/itemsaver.go" afterDir="false" />
+    <list default="true" id="73ac2f13-44a1-4df6-a45f-94cf53ef0721" name="Default Changelist" comment="rpc调用存储">
+      <change afterPath="$PROJECT_DIR$/crawler_distributed/worker/client/worker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler_distributed/worker/rpc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler_distributed/worker/server/client_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler_distributed/worker/server/worker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler_distributed/worker/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine/worker.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler_distributed/persist/rpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_distributed/persist/rpc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler_distributed/persist/server/client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_distributed/persist/server/client_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler_distributed/persist/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_distributed/persist/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_distributed/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_distributed/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_distributed/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_distributed/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_distributed/persist/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_distributed/persist/server/itemsaver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/concurrent.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/concurrent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhenai/parser/city.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/city.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhenai/parser/citylist.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/citylist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhenai/parser/citylist_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/citylist_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhenai/parser/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/zhenai/parser/profile.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -296,7 +307,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestSave in crawler/persist">
+  <component name="RunManager" selected="Go Test.TestCrawlService in crawler/crawler_distributed/worker/server">
     <configuration name="go build crawler" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="crawler" />
       <working_directory value="$PROJECT_DIR$" />
@@ -306,13 +317,15 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build crawler/fetcher/getIp" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCrawlService in crawler/crawler_distributed/worker/server" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="crawler" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/crawler_distributed/worker/server" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/fetcher/getIp/getIP.go" />
-      <package value="crawler/fetcher/getIp" />
+      <package value="crawler/crawler_distributed/worker/server" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestCrawlService$" />
       <method v="2" />
     </configuration>
     <configuration name="TestItemSaver in crawler/crawler_distributed/persist/server" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -350,11 +363,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestCrawlService in crawler/crawler_distributed/worker/server" />
+        <item itemvalue="Go Build.go build crawler" />
         <item itemvalue="Go Test.TestSave in crawler/persist" />
         <item itemvalue="Go Test.TestItemSaver in crawler/crawler_distributed/persist/server" />
         <item itemvalue="Go Test.TestParseCityList in crawler/zhenai/parser" />
-        <item itemvalue="Go Build.go build crawler" />
-        <item itemvalue="Go Build.go build crawler/fetcher/getIp" />
       </list>
     </recent_temporary>
   </component>
@@ -385,7 +398,8 @@
     <MESSAGE value="request和worker实现队列" />
     <MESSAGE value="实现存储模块" />
     <MESSAGE value="通过rpc调用存储" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过rpc调用存储" />
+    <MESSAGE value="rpc调用存储" />
+    <option name="LAST_COMMIT_MESSAGE" value="rpc调用存储" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
